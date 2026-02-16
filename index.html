@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giulio-lang Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+    <div class="search-overlay">
+        <div class="search-bar-content">
+            <button id="close-search-btn" class="action-btn"><i class="fas fa-times"></i></button>
+            <input type="text" id="search-input" placeholder="Search documentation...">
+            <div id="search-results" class="search-results"></div>
+        </div>
+    </div>
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <h1>Giulio-lang</h1>
+            <div class="header-bottom">
+                <p class="version" id="version"></p>
+                <div class="header-actions">
+                    <button id="search-btn" class="action-btn" title="Search Documentation">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button id="theme-toggle-btn" class="action-btn" title="Toggle Theme">
+                        <i class="fas fa-sun"></i> 
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="nav-section">
+            <h3>Getting Started</h3>
+            <ul>
+                <li><a href="#intro" class="nav-link active">Introduction</a></li>
+                <li><a href="#installation" class="nav-link">Installation</a></li>
+                <li><a href="#quick-start" class="nav-link">Quick Start</a></li>
+            </ul>
+        </div>
+        <div class="nav-section">
+            <h3>Language Guide</h3>
+            <ul>
+                <li><a href="#syntax" class="nav-link">Syntax</a></li>
+                <li><a href="#variables" class="nav-link">Variables</a></li>
+                <li><a href="#functions" class="nav-link">Functions</a></li>
+                <li><a href="#control-flow" class="nav-link">Control Flow</a></li>
+                <li><a href="#data-types" class="nav-link">Data Types</a></li>
+                <li><a href="#structs" class="nav-link">Structs</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-section">
+            <h3>Built-in Functions</h3>
+            <ul>
+                <li><a href="#io-functions" class="nav-link">I/O Functions</a></li>
+                <li><a href="#array-functions" class="nav-link">Array Functions</a></li>
+                <li><a href="#string-functions" class="nav-link">String Functions</a></li>
+                <li><a href="#int-functions" class="nav-link">Integer Functions</a></li>
+                <li><a href="#float-functions"
+                class="nav-link">Float Functions</a></li>
+                <li><a href="#hash-functions" class="nav-link">Hash Functions</a></li>
+                <li><a href="#struct-functions" class="nav-link">Struct Functions</a></li>
+                <li><a href="#utility-functions" class="nav-link">Utility Functions</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-section">
+            <h3>Standard Library</h3>
+            <ul>
+                <li><a href="#stdlib-io" class="nav-link">IO Module</a></li>
+                <li><a href="#stdlib-json" class="nav-link">JSON Module</a></li>
+                <li><a href="#stdlib-string" class="nav-link">String Module</a></li>
+                <li><a href="#stdlib-time" class="nav-link">Time Module</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-section">
+            <h3>Reference</h3>
+            <ul>
+                <li><a href="#cli" class="nav-link">CLI Reference</a></li>
+                <li><a href="#repl" class="nav-link">REPL</a></li>
+                <li><a href="#errors" class="nav-link">Error Handling</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="content">
+        <div id="intro" class="section"></div>
+        <div id="installation" class="section"></div>
+        <div id="quick-start" class="section"></div>
+        <div id="syntax" class="section"></div>
+        <div id="variables" class="section"></div>
+        <div id="functions" class="section"></div>
+        <div id="control-flow" class="section"></div>
+        <div id="data-types" class="section"></div>
+        <div id="structs" class="section"></div>
+        <div id="io-functions" class="section"></div>
+        <div id="array-functions" class="section"></div>
+        <div id="string-functions" class="section"></div>
+        <div id="int-functions" class="section"></div>
+        <div id="float-functions" class="section"></div>
+        <div id="hash-functions" class="section"></div>
+        <div id="struct-functions" class="section"></div>
+        <div id="utility-functions" class="section"></div>
+        <div id="stdlib-io" class="section"></div>
+        <div id="stdlib-json" class="section"></div>
+        <div id="stdlib-math" class="section"></div>
+        <div id="stdlib-string" class="section"></div>
+        <div id="stdlib-time" class="section"></div>
+        <div id="cli" class="section"></div>
+        <div id="repl" class="section"></div>
+        <div id="errors" class="section"></div>
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+() => `
+<h1>Standard Library: String Module</h1>
+
+<p>The <code>string</code> module provides additional, higher-level functions for string manipulation, complementing the built-in string methods.</p>
+
+<p>To use the functions in this module, you must first import it:</p>
+<pre><code>import std.string;</code></pre>
+
+<h2>Function Reference</h2>
+
+<div class="function-doc">
+    <div class="function-signature">join(array, separator) → String</div>
+    <div class="function-description">
+        <p>Joins all elements of an array (which must all be strings) into a single string, separated by the given separator.</p>
+    </div>
+    <div class="function-params">
+        <h4>Parameters</h4>
+        <ul>
+            <li><code>array</code> (Array) - An array of strings to join.</li>
+            <li><code>separator</code> (String) - The string to insert between each element.</li>
+        </ul>
+    </div>
+    <div class="function-returns">
+        <h4>Returns</h4>
+        <p>A new String containing the joined elements.</p>
+    </div>
+    <div class="function-example">
+        <h4>Example</h4>
+        <pre><code>let parts = ["Giulio", "is", "awesome"];
+let sentence = join(parts, " ");
+println(sentence); // "Giulio is awesome"
+
+let csv = join(["a", "b", "c"], ",");
+println(csv); // "a,b,c"
+</code></pre>
+    </div>
+</div>
+`;
