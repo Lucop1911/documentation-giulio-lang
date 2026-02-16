@@ -88,6 +88,11 @@ function navigateToSection(sectionId) {
     if (!docs.content[sectionId]) {
         loadContent(sectionId);
     }
+
+    // Close mobile menu after navigation
+    if (window.innerWidth <= 768) {
+        toggleMobileMenu(true); 
+    }
 }
 
 async function loadContent(sectionId, forSearchPreload = false) {
@@ -363,9 +368,26 @@ function highlightCode() {
 
 
 // Mobile menu toggle (if needed)
-function toggleMobileMenu() {
+function toggleMobileMenu(forceClose = false) {
     const sidebar = document.querySelector('.sidebar');
-    sidebar.classList.toggle('open');
+    const sidebarOverlay = document.querySelector('.sidebar-overlay');
+
+    if (!sidebar) {
+        console.error('Sidebar element not found!');
+        return;
+    }
+
+    console.log('toggleMobileMenu called. Current sidebar classes:', sidebar.classList.value);
+
+    if (forceClose) {
+        sidebar.classList.remove('open');
+        sidebarOverlay.classList.remove('active');
+        console.log('Sidebar closed. New sidebar classes:', sidebar.classList.value);
+    } else {
+        const isOpen = sidebar.classList.toggle('open');
+        sidebarOverlay.classList.toggle('active');
+        console.log('Sidebar toggled. Is now open?', isOpen, 'New sidebar classes:', sidebar.classList.value);
+    }
 }
 
 // Theme management
@@ -408,6 +430,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggleBtn = document.getElementById('theme-toggle-btn');
     if (themeToggleBtn) {
         themeToggleBtn.addEventListener('click', toggleTheme);
+    }
+
+    const mobileMenuToggleBtn = document.getElementById('mobile-menu-toggle-btn');
+    const sidebarOverlay = document.querySelector('.sidebar-overlay');
+    
+    if (mobileMenuToggleBtn) {
+        console.log('Mobile menu toggle button found:', mobileMenuToggleBtn);
+        mobileMenuToggleBtn.addEventListener('click', () => {
+            console.log('Mobile menu toggle button clicked.');
+            toggleMobileMenu();
+        });
+    } else {
+        console.error('Mobile menu toggle button not found!');
+    }
+
+    if (sidebarOverlay) {
+        sidebarOverlay.addEventListener('click', () => {
+            console.log('Sidebar overlay clicked (forcing close).');
+            toggleMobileMenu(true);
+        });
     }
 
     // Preload all content for search after initial navigation is done

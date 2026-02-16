@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
 <body>
+    <div class="sidebar-overlay"></div>
     <div class="search-overlay">
         <div class="search-bar-content">
             <button id="close-search-btn" class="action-btn"><i class="fas fa-times"></i></button>
@@ -27,6 +28,7 @@
                     <button id="theme-toggle-btn" class="action-btn" title="Toggle Theme">
                         <i class="fas fa-sun"></i> 
                     </button>
+
                 </div>
             </div>
         </div>
@@ -87,6 +89,9 @@
     </nav>
 
     <main class="content">
+        <button id="mobile-menu-toggle-btn" class="action-btn menu-toggle-btn" title="Open Menu">
+            <i class="fas fa-bars"></i>
+        </button>
         <div id="intro" class="section"></div>
         <div id="installation" class="section"></div>
         <div id="quick-start" class="section"></div>
