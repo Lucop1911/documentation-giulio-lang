@@ -329,7 +329,7 @@ function highlightCode() {
         // Keywords
         const keywords = ['let', 'fn', 'if', 'else', 'return', 'struct', 'this',
                           'import', 'while', 'for', 'in', 'break', 'continue',
-                          'true', 'false', 'null, try, catch, finally,'];
+                          'true', 'false', 'null', 'try', 'catch', 'finally', 'async', 'await', 'future'];
         keywords.forEach(keyword => {
             const regex = new RegExp(`\\b(${keyword})\\b`, 'g');
             html = html.replace(

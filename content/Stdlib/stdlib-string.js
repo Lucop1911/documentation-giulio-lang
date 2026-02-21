@@ -4,7 +4,7 @@
 <p>The <code>string</code> module provides additional, higher-level functions for string manipulation, complementing the built-in string methods.</p>
 
 <p>To use the functions in this module, you must first import it:</p>
-<pre><code>import std.string;</code></pre>
+<pre><code>import std::string;</code></pre>
 
 <h2>Function Reference</h2>
 
@@ -30,7 +30,7 @@
 let sentence = join(parts, " ");
 println(sentence); // "Giulio is awesome"
 
-let csv = join(["a", "b", "c"], ",");
+let csv = string.join(["a", "b", "c"], ",");
 println(csv); // "a,b,c"
 </code></pre>
     </div>

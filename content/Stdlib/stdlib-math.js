@@ -4,7 +4,7 @@
 <p>The <code>math</code> module provides common mathematical functions, including utilities for rounding, clamping, and generating random numbers.</p>
 
 <p>To use the functions in this module, you must first import it:</p>
-<pre><code>import std.math;</code></pre>
+<pre><code>import std::math;</code></pre>
 
 <h2>Function Reference</h2>
 

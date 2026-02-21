@@ -109,14 +109,14 @@ p.greet();</code></pre>
 <p>Code can be organized into modules and imported using the <code>import</code> keyword.</p>
 
 <pre><code>// Importing a module from std
-import std.io;
-import std.math;
+import std::io;
+import std::math;
 
 // Importing a module from a local file
-import path/to/file.giu;
+import path/to/file;
 
 // Importing elements from a local file
-import path/to/file.giu.{function1, function2, ...};</code></pre>
+import path/to/file::{function1, function2, ...};</code></pre>
 
 <div class="alert alert-info">
     <strong>Note:</strong> Statements in Giulio-lang typically end with a semicolon <code>;</code>.

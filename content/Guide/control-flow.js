@@ -90,6 +90,61 @@ while (true) {
     println(i); // Prints 1, 3
 }</code></pre>
 
+<h2>Error Handling</h2>
+
+<p>Giulio-lang provides try-catch-finally blocks for handling errors and exceptions, along with the <code>throw</code> statement to raise exceptions.</p>
+
+<h3>Throw</h3>
+
+<p>The <code>throw</code> statement raises an exception that can be caught by a try-catch block.</p>
+
+<pre><code>throw "Something went wrong!";</code></pre>
+
+<p>You can throw any value, including strings, integers, or custom objects.</p>
+
+<h3>Try-Catch</h3>
+
+<p>The <code>try-catch</code> statement allows you to handle exceptions that might be thrown during execution.</p>
+
+<pre><code>try {
+    let result = risky_operation();
+    println("Success: ", result);
+} catch (error) {
+    println("Caught error: ", error);
+}</code></pre>
+
+<p>The <code>catch</code> block receives the thrown value, which you can name whatever you like:</p>
+
+<pre><code>try {
+    throw "A problem occurred";
+} catch (e) {
+    println("Handled: ", e);
+}</code></pre>
+
+<h3>Try-Catch-Finally</h3>
+
+<p>The <code>finally</code> block contains code that will always execute, regardless of whether an exception was thrown or caught.</p>
+
+<pre><code>try {
+    println("Trying...");
+    throw "Error!";
+} catch (e) {
+    println("Caught: ", e);
+} finally {
+    println("This always runs");
+}</code></pre>
+
+<p>The <code>finally</code> block is useful for cleanup operations or logging after a try block completes.</p>
+
+<pre><code>try {
+    let content = read_file("data.txt");
+    println(content);
+} catch (e) {
+    println("Error reading file: ", e);
+} finally {
+    println("Attempted to read file");
+}</code></pre>
+
 <div class="alert alert-success">
     <strong>Next Steps:</strong> Now that you understand control flow, learn about <a href="#functions">Functions</a> to organize your code.
 </div>

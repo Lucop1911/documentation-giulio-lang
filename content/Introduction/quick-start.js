@@ -219,22 +219,22 @@ let i = 3.14.to_int();  // 3</code></pre>
 
 <p>Use the standard library modules:</p>
 
-<pre><code>import std.io;
-import std.math;
+<pre><code>import std::io;
+import std::math;
 
 // Read from a file
-if (exists("input.txt")) {
-    let content = read_file("input.txt");
+if (io.exists("input.txt")) {
+    let content = io.read_file("input.txt");
     println(content);
 } else {
     println("File not found");
 }
 
 // Write to a file
-write_file("output.txt", "Hello, file!");
+io.write_file("output.txt", "Hello, file!");
 
 // Generate random number
-let random_num = random(1, 100);
+let random_num = math.random(1, 100);
 println("Random number: " + random_num.to_string());</code></pre>
 
 <h2>Complete Example</h2>
@@ -242,9 +242,9 @@ println("Random number: " + random_num.to_string());</code></pre>
 <p>A simple program that combines multiple concepts:</p>
 
 <pre><code>// Simple number guessing game
-import std.math;
+import std::math;
 
-let secret = random(1, 100);
+let secret = math.random(1, 100);
 let attempts = 0;
 
 println("I'm thinking of a number between 1 and 100");

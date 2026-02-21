@@ -28,6 +28,19 @@ println(score); // 10
 score = 20;
 println(score); // 20</code></pre>
 
+<h2>Compound Assignment</h2>
+
+<p>Giulio-lang supports compound assignment operators that combine an arithmetic operation with assignment:</p>
+
+<pre><code>let x = 10;
+x += 5;  // x is now 15 (equivalent to x = x + 5)
+x -= 3;  // x is now 12 (equivalent to x = x - 3)
+x *= 2;  // x is now 24 (equivalent to x = x * 2)
+x /= 4;  // x is now 6  (equivalent to x = x / 2)
+x %= 5;  // x is now 1  (equivalent to x = x % 5)</code></pre>
+
+<p>These operators provide a convenient shorthand for updating variables with arithmetic operations.</p>
+
 <p>Because of dynamic typing, you can technically assign a value of a different type to a variable, though it is often better practice to keep variables consistent.</p>
 
 <pre><code>let data = 100;

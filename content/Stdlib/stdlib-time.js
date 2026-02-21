@@ -4,7 +4,7 @@
 <p>The <code>time</code> module provides functions for getting the current system time and for pausing program execution.</p>
 
 <p>To use the functions in this module, you must first import it:</p>
-<pre><code>import std.time;</code></pre>
+<pre><code>import std::time;</code></pre>
 
 <h2>Function Reference</h2>
 
@@ -25,7 +25,7 @@
         <h4>Example</h4>
         <pre><code>let start_time = now();
 // ... do some work ...
-let end_time = now();
+let end_time = time.now();
 let duration = end_time - start_time;
 println("Operation took: ", duration, "ms");
 </code></pre>
@@ -50,7 +50,7 @@ println("Operation took: ", duration, "ms");
     <div class="function-example">
         <h4>Example</h4>
         <pre><code>println("Waiting...");
-sleep(1000); // Sleep for 1 second
+time.sleep(1000); // Sleep for 1 second
 println("Done.");
 </code></pre>
     </div>

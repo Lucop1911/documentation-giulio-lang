@@ -4,7 +4,7 @@
 <p>The <code>json</code> module provides functions for working with JSON (JavaScript Object Notation) data. It allows for serialization (converting Giulio-lang objects to JSON strings) and deserialization (converting JSON strings back into Giulio-lang objects).</p>
 
 <p>To use the functions in this module, you must first import it:</p>
-<pre><code>import std.json;</code></pre>
+<pre><code>import std::json;</code></pre>
 
 <h2>Function Reference</h2>
 
@@ -26,7 +26,7 @@
     <div class="function-example">
         <h4>Example</h4>
         <pre><code>let data = {"name": "Giulio", "version": 1.0, "features": ["fast", "simple"]};
-let json_string = serialize(data);
+let json_string = json.serialize(data);
 println(json_string); // {"name":"Giulio","version":1.0,"features":["fast","simple"]}
 </code></pre>
     </div>
@@ -50,7 +50,7 @@ println(json_string); // {"name":"Giulio","version":1.0,"features":["fast","simp
     <div class="function-example">
         <h4>Example</h4>
         <pre><code>let text = '{"id": 123, "active": true}';
-let data = deserialize(text);
+let data = json.deserialize(text);
 println(data["id"]); // 123
 println(data.get("active")); // true
 </code></pre>
@@ -75,7 +75,7 @@ println(data.get("active")); // true
     <div class="function-example">
         <h4>Example</h4>
         <pre><code>let compact_json = '{"user":{"id":1,"name":"Giulio"}}';
-let pretty_json = prettify(compact_json);
+let pretty_json = json.prettify(compact_json);
 println(pretty_json);
 // {
 //   "user": {
@@ -107,8 +107,8 @@ println(pretty_json);
         <pre><code>let valid = '{"key": "value"}';
 let invalid = '{"key": "value",}'; // trailing comma
 
-println(validate(valid));   // true
-println(validate(invalid)); // false
+println(json.validate(valid));   // true
+println(json.validate(invalid)); // false
 </code></pre>
     </div>
 </div>
