@@ -19,6 +19,10 @@ let add = fn(x, y) {
 
 println(add(5, 10)); // 15</code></pre>
 
+<div class="alert alert-warning">
+    <strong>Warning:</strong> Due to the interpreted nature of giulio-lang, functions must be declared before being called. Declaring them after will trigger a runtime error.
+</div>
+
 <h2>Parameters</h2>
 
 <p>Functions can take any number of parameters. Parameters are listed in parentheses, separated by commas.</p>

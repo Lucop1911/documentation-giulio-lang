@@ -83,19 +83,19 @@ let nothing = null;</code></pre>
 <p>Functions are first-class values in Giulio-lang:</p>
 
 <pre><code>// Function assigned to a variable
-let add = fn(a, b) { a + b };
+fn add(a, b) { a + b }
 
 println(add(5, 3));  // 8</code></pre>
 
 <p>Functions can be passed as arguments and returned from other functions:</p>
 
-<pre><code>let apply = fn(func, x, y) {
+<pre><code>fn apply(func, x, y) {
     return func(x, y);
-};
+}
 
-let multiply = fn(a, b) {
+fn multiply(a, b) {
     return a * b;
-};
+}
 
 let result = apply(multiply, 4, 5);
 println(result);  // 20</code></pre>
