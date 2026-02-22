@@ -22,6 +22,12 @@ Hello, Giulio
 >> exit
 Goodbye!</code></pre>
 
+<h2>VS Code Extension (Syntax Highlighting)</h2>
+<p>For a better user expirience we suggest installing the Giulio-lang VS Code extension for syntax highlighting:</p>
+<p><a href="#others/giulio-lang-0.0.1.vsix">Download giulio-lang-0.0.1.vsix</a></p>
+<p>Installation guide: Open vscode -> Go to "Extensions" -> Click on the 3 dots -> At the bottom you will find "Install from VSIX..." -> Select the .vsix file.</p>
+
+
 <h2>Your First Script</h2>
 
 <p>Create a file called <code>first.giu</code> with the following content:</p>

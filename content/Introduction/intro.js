@@ -91,10 +91,6 @@ for (let i = 0; i < 10; i = i + 1) {
     <li><strong>Modern:</strong> Support for closures, structs, and functional programming patterns</li>
 </ul>
 
-<h2>Community and Development</h2>
-
-<p>Giulio-lang is actively developed and welcomes contributions. Visit the <a href="https://github.com/lucop1911/giulio-lang" target="_blank">GitHub repository</a> to report issues, request features, or contribute to the project.</p>
-
 <div class="alert alert-success">
     <strong>Ready to dive in?</strong> Continue to <a href="#installation">Installation</a> to get Giulio-lang running on your system.
 </div>

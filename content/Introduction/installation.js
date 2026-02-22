@@ -161,6 +161,6 @@ cargo run --release</code></pre>
 <p>To update to the latest version:</p>
 
 <pre><code>cd giulio-lang
-git pull origin main
+git pull origin master
 cargo build --release</code></pre>
 `;
