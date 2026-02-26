@@ -66,17 +66,6 @@ async fn file_example() {
     io.delete_file("example.txt");
 }</code></pre>
 
-<h2>Top-Level Await</h2>
-
-<p>You can use <code>await</code> at the top level of your script to run async code directly, without wrapping it in a main function.</p>
-
-<pre><code>async fn main() {
-    let result = await some_async_function();
-    println(result);
-}
-
-await main();</code></pre>
-
 <h2>Best Practices</h2>
 
 <ul>
