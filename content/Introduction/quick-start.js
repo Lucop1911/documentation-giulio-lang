@@ -131,7 +131,7 @@ for (fruit in fruits) {
 
 <h3>For Loops (C-style)</h3>
 
-<pre><code>for (let i = 0; i < 10; i = i + 1) {
+<pre><code>for (let i = 0; i < 10; i += 1) {
     if (i % 2 == 0) {
         println(i, " is even");
     }
@@ -139,7 +139,7 @@ for (fruit in fruits) {
 
 <h3>Break and Continue</h3>
 
-<pre><code>for (let i = 0; i < 10; i = i + 1) {
+<pre><code>for (let i = 0; i < 10; i += 1) {
     if (i == 5) {
         break;  // Exit the loop
     }
