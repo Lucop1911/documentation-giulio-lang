@@ -1,7 +1,7 @@
 () => `
 <h1>Built-in Float Functions & Methods</h1>
 
-<p>Giulio-lang provides a variety of methods for working with floating-point numbers. Floats are used to represent numbers with fractional parts.</p>
+<p>G-lang provides a variety of methods for working with floating-point numbers. Floats are used to represent numbers with fractional parts.</p>
 
 <h2>Basic Operations</h2>
 

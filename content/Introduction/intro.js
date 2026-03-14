@@ -1,9 +1,9 @@
 () => `
-<h1>Introduction to Giulio-lang</h1>
+<h1>Introduction to G-lang</h1>
 
 <p>
-    <a href="https://github.com/lucop1911/giulio-lang" target="_blank">
-        <i class="fa-brands fa-github"></i> Giulio-lang</a>
+    <a href="https://github.com/lucop1911/g-lang" target="_blank">
+        <i class="fa-brands fa-github"></i> G-lang</a>
 is a dynamically-typed interpreted programming language written in Rust. It's a lightweight, expressive language designed for simplicity and ease of use, providing a clean syntax with support for modern programming paradigms including functions, structs, and a flexible type system.
 </p>
 
@@ -22,15 +22,15 @@ is a dynamically-typed interpreted programming language written in Rust. It's a 
 
 <h2>Design Philosophy</h2>
 
-<p>Giulio-lang aims to provide a balance between simplicity and power. The language syntax is clean and readable, making it easy for beginners to pick up while providing enough features for experienced programmers to build complex applications.</p>
+<p>G-lang aims to provide a balance between simplicity and power. The language syntax is clean and readable, making it easy for beginners to pick up while providing enough features for experienced programmers to build complex applications.</p>
 
 <div class="alert alert-info">
-    <strong>Getting Started:</strong> Check out the <a href="#installation">Installation</a> guide to set up Giulio-lang, or jump straight to the <a href="#quick-start">Quick Start</a> for your first program.
+    <strong>Getting Started:</strong> Check out the <a href="#installation">Installation</a> guide to set up G-lang, or jump straight to the <a href="#quick-start">Quick Start</a> for your first program.
 </div>
 
 <h2>Hello World</h2>
 
-<p>Here's the traditional first program in Giulio-lang:</p>
+<p>Here's the traditional first program in G-lang:</p>
 
 <pre><code>println("Hello, World!");</code></pre>
 
@@ -81,7 +81,7 @@ for (let i = 0; i < 10; i += 1) {
     }
 }</code></pre>
 
-<h2>Why Giulio-lang?</h2>
+<h2>Why G-lang?</h2>
 
 <ul>
     <li><strong>Simple Syntax:</strong> Easy to read and write, perfect for scripting and rapid prototyping</li>
@@ -92,6 +92,6 @@ for (let i = 0; i < 10; i += 1) {
 </ul>
 
 <div class="alert alert-success">
-    <strong>Ready to dive in?</strong> Continue to <a href="#installation">Installation</a> to get Giulio-lang running on your system.
+    <strong>Ready to dive in?</strong> Continue to <a href="#installation">Installation</a> to get G-lang running on your system.
 </div>
 `;

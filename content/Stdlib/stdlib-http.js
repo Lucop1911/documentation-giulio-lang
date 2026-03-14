@@ -58,7 +58,7 @@
     <div class="function-example">
         <h4>Example</h4>
         <pre><code>async fn create_user() {
-    let response = await http.post("https://api.example.com/users", '{"name": "Giulio"}');
+    let response = await http.post("https://api.example.com/users", '{"name": "G"}');
     println(response["status"]); // e.g., 201
 }</code></pre>
     </div>
@@ -83,7 +83,7 @@
     <div class="function-example">
         <h4>Example</h4>
         <pre><code>async fn update_user() {
-    let response = await http.put("https://api.example.com/users/1", '{"name": "Giulio v2"}');
+    let response = await http.put("https://api.example.com/users/1", '{"name": "G v2"}');
     println(response["status"]); // e.g., 200
 }</code></pre>
     </div>

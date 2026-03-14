@@ -1,18 +1,18 @@
 () => `
 <h1>Syntax Guide</h1>
 
-<p>This guide provides a comprehensive reference for the syntax of Giulio-lang. The language is designed to be familiar to users of C-family languages like JavaScript, Rust, and C.</p>
+<p>This guide provides a comprehensive reference for the syntax of G-lang. The language is designed to be familiar to users of C-family languages like JavaScript, Rust, and C.</p>
 
 <h2>Comments</h2>
 
-<p>Giulio-lang supports single-line comments. Everything after <code>//</code> on a line is ignored.</p>
+<p>G-lang supports single-line comments. Everything after <code>//</code> on a line is ignored.</p>
 
 <pre><code>// This is a comment
 let x = 5; // This is also a comment</code></pre>
 
 <h2>Variables</h2>
 
-<p>Variables are declared using the <code>let</code> keyword. Giulio-lang is dynamically typed, so you don't need to specify types.</p>
+<p>Variables are declared using the <code>let</code> keyword. G-lang is dynamically typed, so you don't need to specify types.</p>
 
 <pre><code>let x = 10;
 let message = "Hello";
@@ -25,7 +25,7 @@ count = count + 1;</code></pre>
 
 <h2>Data Types</h2>
 
-<p>Giulio-lang supports the following literals and types:</p>
+<p>G-lang supports the following literals and types:</p>
 
 <ul>
     <li><strong>Integers:</strong> <code>42</code>, <code>-10</code></li>
@@ -54,7 +54,7 @@ count = count + 1;</code></pre>
 
 <h3>Loops</h3>
 
-<p>Giulio-lang supports <code>while</code> loops and two types of <code>for</code> loops.</p>
+<p>G-lang supports <code>while</code> loops and two types of <code>for</code> loops.</p>
 
 <pre><code>// While loop
 while (condition) {
@@ -119,6 +119,6 @@ import path/to/file;
 import path/to/file::{function1, function2, ...};</code></pre>
 
 <div class="alert alert-info">
-    <strong>Note:</strong> Statements in Giulio-lang typically end with a semicolon <code>;</code>.
+    <strong>Note:</strong> Statements in G-lang typically end with a semicolon <code>;</code>.
 </div>
 `;

@@ -1,7 +1,7 @@
 () => `
 <h1>Built-in Integer Functions & Methods</h1>
 
-<p>Giulio-lang provides a variety of functions and methods for working with integers. Integers represent whole numbers.</p>
+<p>G-lang provides a variety of functions and methods for working with integers. Integers represent whole numbers.</p>
 
 <h2>Basic Operations</h2>
 

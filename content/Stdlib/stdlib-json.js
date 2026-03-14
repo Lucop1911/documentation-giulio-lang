@@ -1,7 +1,7 @@
 () => `
 <h1>Standard Library: JSON Module</h1>
 
-<p>The <code>json</code> module provides functions for working with JSON (JavaScript Object Notation) data. It allows for serialization (converting Giulio-lang objects to JSON strings) and deserialization (converting JSON strings back into Giulio-lang objects).</p>
+<p>The <code>json</code> module provides functions for working with JSON (JavaScript Object Notation) data. It allows for serialization (converting G-lang objects to JSON strings) and deserialization (converting JSON strings back into G-lang objects).</p>
 
 <p>To use the functions in this module, you must first import it:</p>
 <pre><code>import std::json;</code></pre>
@@ -11,12 +11,12 @@
 <div class="function-doc">
     <div class="function-signature">serialize(value) → String</div>
     <div class="function-description">
-        <p>Serializes a Giulio-lang value (like a Hash, Array, String, etc.) into a JSON string.</p>
+        <p>Serializes a G-lang value (like a Hash, Array, String, etc.) into a JSON string.</p>
     </div>
     <div class="function-params">
         <h4>Parameters</h4>
         <ul>
-            <li><code>value</code> (Any) - The Giulio-lang value to serialize. Supported types include Integer, Float, Boolean, String, Array, Hash, Struct, and Null.</li>
+            <li><code>value</code> (Any) - The G-lang value to serialize. Supported types include Integer, Float, Boolean, String, Array, Hash, Struct, and Null.</li>
         </ul>
     </div>
     <div class="function-returns">
@@ -25,9 +25,9 @@
     </div>
     <div class="function-example">
         <h4>Example</h4>
-        <pre><code>let data = {"name": "Giulio", "version": 1.0, "features": ["fast", "simple"]};
+        <pre><code>let data = {"name": "G", "version": 1.0, "features": ["fast", "simple"]};
 let json_string = json.serialize(data);
-println(json_string); // {"name":"Giulio","version":1.0,"features":["fast","simple"]}
+println(json_string); // {"name":"G","version":1.0,"features":["fast","simple"]}
 </code></pre>
     </div>
 </div>
@@ -35,7 +35,7 @@ println(json_string); // {"name":"Giulio","version":1.0,"features":["fast","simp
 <div class="function-doc">
     <div class="function-signature">deserialize(json_string) → Any</div>
     <div class="function-description">
-        <p>Deserializes a JSON string into a Giulio-lang value. JSON objects are converted to Hashes, arrays to Arrays, etc.</p>
+        <p>Deserializes a JSON string into a G-lang value. JSON objects are converted to Hashes, arrays to Arrays, etc.</p>
     </div>
     <div class="function-params">
         <h4>Parameters</h4>
@@ -45,7 +45,7 @@ println(json_string); // {"name":"Giulio","version":1.0,"features":["fast","simp
     </div>
     <div class="function-returns">
         <h4>Returns</h4>
-        <p>A Giulio-lang value (Hash, Array, etc.) representing the parsed JSON.</p>
+        <p>A G-lang value (Hash, Array, etc.) representing the parsed JSON.</p>
     </div>
     <div class="function-example">
         <h4>Example</h4>
@@ -74,13 +74,13 @@ println(data.get("active")); // true
     </div>
     <div class="function-example">
         <h4>Example</h4>
-        <pre><code>let compact_json = '{"user":{"id":1,"name":"Giulio"}}';
+        <pre><code>let compact_json = '{"user":{"id":1,"name":"G"}}';
 let pretty_json = json.prettify(compact_json);
 println(pretty_json);
 // {
 //   "user": {
 //     "id": 1,
-//     "name": "Giulio"
+//     "name": "G"
 //   }
 // }
 </code></pre>

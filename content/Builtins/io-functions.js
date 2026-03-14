@@ -1,7 +1,7 @@
 () => `
 <h1>Standard I/O</h1>
 
-<p>Giulio-lang provides built-in functions for handling standard input and output operations, allowing your programs to interact with the user or the terminal.</p>
+<p>G-lang provides built-in functions for handling standard input and output operations, allowing your programs to interact with the user or the terminal.</p>
 
 <h2>Output</h2>
 

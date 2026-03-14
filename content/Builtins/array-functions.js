@@ -1,7 +1,7 @@
 () => `
 <h1>Built-in Array Functions & Methods</h1>
 
-<p>Giulio-lang provides a set of built-in functions and methods for common array manipulations. These generally follow a functional approach, returning a new array rather than modifying the original one in place.</p>
+<p>G-lang provides a set of built-in functions and methods for common array manipulations. These generally follow a functional approach, returning a new array rather than modifying the original one in place.</p>
 
 <h2>Accessing Elements</h2>
 

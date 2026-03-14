@@ -1,36 +1,36 @@
 () => `
 <h1>Quick Start</h1>
 
-<p>Get started with Giulio-lang in minutes. This guide covers the basics to get you writing code right away.</p>
+<p>Get started with G-lang in minutes. This guide covers the basics to get you writing code right away.</p>
 
 <h2>Running the REPL</h2>
 
-<p>The easiest way to experiment with Giulio-lang is through the REPL (Read-Eval-Print Loop):</p>
+<p>The easiest way to experiment with G-lang is through the REPL (Read-Eval-Print Loop):</p>
 
-<pre><code>giulio-lang</code></pre>
+<pre><code>g-lang</code></pre>
 
 <p>This starts an interactive session where you can type expressions and see results immediately:</p>
 
-<pre><code>Giulio-lang v0.1.0
+<pre><code>G-lang v0.1.0
 Type 'exit' or 'quit' to quit
 
 >> 2 + 2
 4
->> let name = "Giulio"
+>> let name = "G"
 >> println("Hello, " + name)
-Hello, Giulio
+Hello, G
 >> exit
 Goodbye!</code></pre>
 
 <h2>VS Code Extension (Syntax Highlighting)</h2>
-<p>For a better user expirience we suggest installing the Giulio-lang VS Code extension for syntax highlighting:</p>
-<p><a href="/content/others/giulio-lang-0.0.1.vsix">Download giulio-lang-0.0.1.vsix</a></p>
+<p>For a better user expirience we suggest installing the G-lang VS Code extension for syntax highlighting:</p>
+<p><a href="/content/others/g-lang-0.0.1.vsix">Download g-lang-0.0.1.vsix</a></p>
 <p>Installation guide: Open vscode -> Go to "Extensions" -> Click on the 3 dots -> At the bottom you will find "Install from VSIX..." -> Select the .vsix file.</p>
 
 
 <h2>Your First Script</h2>
 
-<p>Create a file called <code>first.giu</code> with the following content:</p>
+<p>Create a file called <code>first.g</code> with the following content:</p>
 
 <pre><code>// Variables and arithmetic
 let x = 10;
@@ -41,7 +41,7 @@ println(sum);</code></pre>
 
 <p>Run it:</p>
 
-<pre><code>giulio-lang run first.giu</code></pre>
+<pre><code>g-lang run first.g</code></pre>
 
 <p>Output:</p>
 
@@ -49,7 +49,7 @@ println(sum);</code></pre>
 
 <h2>Variables and Types</h2>
 
-<p>Giulio-lang supports several data types:</p>
+<p>G-lang supports several data types:</p>
 
 <pre><code>// Integers
 let age = 25;
@@ -80,7 +80,7 @@ let nothing = null;</code></pre>
 
 <h2>Functions</h2>
 
-<p>Functions are first-class values in Giulio-lang:</p>
+<p>Functions are first-class values in G-lang:</p>
 
 <pre><code>// Function assigned to a variable
 fn add(a, b) { a + b }
@@ -289,7 +289,7 @@ while (true) {
 <ul>
     <li>Use the REPL to experiment with expressions and test ideas quickly</li>
     <li>Start with small programs and gradually add complexity</li>
-    <li>Check your syntax with <code>giulio-lang check file.giu</code> before running</li>
+    <li>Check your syntax with <code>g-lang check file.g</code> before running</li>
     <li>Read error messages carefully - they often point directly to the problem</li>
     <li>Explore the standard library modules for common functionality</li>
 </ul>

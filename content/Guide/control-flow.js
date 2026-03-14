@@ -1,7 +1,7 @@
 () => `
 <h1>Control Flow</h1>
 
-<p>Control flow statements allow you to dictate the order in which code is executed based on conditions and loops. Giulio-lang supports standard control flow mechanisms familiar to users of C-family languages.</p>
+<p>Control flow statements allow you to dictate the order in which code is executed based on conditions and loops. G-lang supports standard control flow mechanisms familiar to users of C-family languages.</p>
 
 <h2>Conditional Execution</h2>
 
@@ -25,7 +25,7 @@ if (x > 0) {
 
 <h2>Loops</h2>
 
-<p>Giulio-lang provides three ways to loop: <code>while</code> loops, C-style <code>for</code> loops, and iterator-style <code>for</code> loops.</p>
+<p>G-lang provides three ways to loop: <code>while</code> loops, C-style <code>for</code> loops, and iterator-style <code>for</code> loops.</p>
 
 <h3>While Loops</h3>
 
@@ -92,7 +92,7 @@ while (true) {
 
 <h2>Error Handling</h2>
 
-<p>Giulio-lang provides try-catch-finally blocks for handling errors and exceptions, along with the <code>throw</code> statement to raise exceptions.</p>
+<p>G-lang provides try-catch-finally blocks for handling errors and exceptions, along with the <code>throw</code> statement to raise exceptions.</p>
 
 <h3>Throw</h3>
 

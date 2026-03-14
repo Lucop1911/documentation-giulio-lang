@@ -1,7 +1,7 @@
 () => `
 <h1>Data Types</h1>
 
-<p>Giulio-lang provides a robust set of built-in data types to handle various kinds of information. As a dynamically typed language, variables in Giulio-lang can hold values of any type without explicit type declarations.</p>
+<p>G-lang provides a robust set of built-in data types to handle various kinds of information. As a dynamically typed language, variables in G-lang can hold values of any type without explicit type declarations.</p>
 
 <h2>Primitive Types</h2>
 
@@ -11,7 +11,7 @@
 let temperature = -5;</code></pre>
 
 <h3>Big Integers</h3>
-<p>For calculations requiring numbers larger than standard integers can hold, Giulio-lang supports Big Integers automatically. (Integers are automatically converted into BigIntegers or from BigIntegers whenever possible)</p>
+<p>For calculations requiring numbers larger than standard integers can hold, G-lang supports Big Integers automatically. (Integers are automatically converted into BigIntegers or from BigIntegers whenever possible)</p>
 <pre><code>let universe_atoms = 1000000000000000000000000000000;</code></pre>
 
 <h3>Floats</h3>
@@ -36,9 +36,9 @@ let has_error = false;</code></pre>
 
 <p>You can concatenate strings using the <code>+</code> operator:</p>
 
-<pre><code>let first = "Giulio";
+<pre><code>let first = "G";
 let last = "Lang";
-let full = first + " " + last; // "Giulio Lang"</code></pre>
+let full = first + " " + last; // "G Lang"</code></pre>
 
 <h2>Collections</h2>
 
@@ -48,7 +48,7 @@ let full = first + " " + last; // "Giulio Lang"</code></pre>
 <pre><code>let numbers = [1, 2, 3, 4, 5];
 let mixed = [1, "two", true, null];</code></pre>
 
-<p>Giulio-lang provides several built-in functions for working with arrays:</p>
+<p>G-lang provides several built-in functions for working with arrays:</p>
 
 <ul>
     <li><code>len(arr)</code>: Returns the number of elements.</li>

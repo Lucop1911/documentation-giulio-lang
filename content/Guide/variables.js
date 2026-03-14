@@ -1,18 +1,18 @@
 () => `
 <h1>Variables</h1>
 
-<p>Variables are the fundamental building blocks for storing data in Giulio-lang. They allow you to name and manipulate values throughout your program.</p>
+<p>Variables are the fundamental building blocks for storing data in G-lang. They allow you to name and manipulate values throughout your program.</p>
 
 <h2>Declaration</h2>
 
 <p>Variables are declared using the <code>let</code> keyword. You must initialize a variable when you declare it.</p>
 
-<pre><code>let name = "Giulio";
+<pre><code>let name = "G";
 let count = 0;</code></pre>
 
 <h2>Dynamic Typing</h2>
 
-<p>Giulio-lang is dynamically typed, meaning you don't need to explicitly state the type of data a variable will hold. The type is inferred from the value.</p>
+<p>G-lang is dynamically typed, meaning you don't need to explicitly state the type of data a variable will hold. The type is inferred from the value.</p>
 
 <pre><code>let x = 42;        // x is an Integer
 let pi = 3.14;     // pi is a Float
@@ -20,7 +20,7 @@ let active = true; // active is a Boolean</code></pre>
 
 <h2>Mutability</h2>
 
-<p>Variables in Giulio-lang are mutable. Once declared, you can update their value using the assignment operator <code>=</code>.</p>
+<p>Variables in G-lang are mutable. Once declared, you can update their value using the assignment operator <code>=</code>.</p>
 
 <pre><code>let score = 10;
 println(score); // 10
@@ -30,7 +30,7 @@ println(score); // 20</code></pre>
 
 <h2>Compound Assignment</h2>
 
-<p>Giulio-lang supports compound assignment operators that combine an arithmetic operation with assignment:</p>
+<p>G-lang supports compound assignment operators that combine an arithmetic operation with assignment:</p>
 
 <pre><code>let x = 10;
 x += 5;  // x is now 15 (equivalent to x = x + 5)
@@ -55,7 +55,7 @@ data = "Now I'm a string"; // Valid</code></pre>
     <li><strong>Invalid:</strong> <code>1st_item</code>, <code>my-variable</code>, <code>let</code> (keyword)</li>
 </ul>
 
-<p>The standard convention in Giulio-lang is to use <strong>snake_case</strong> for variable names.</p>
+<p>The standard convention in G-lang is to use <strong>snake_case</strong> for variable names.</p>
 
 <div class="alert alert-info">
     <strong>Tip:</strong> Choose descriptive names for your variables to make your code easier to read and maintain.

@@ -1,7 +1,7 @@
 () => `
 <h1>Functions</h1>
 
-<p>Functions are the primary way to organize code in Giulio-lang. They are first-class citizens, meaning they can be stored in variables, passed as arguments, and returned from other functions.</p>
+<p>Functions are the primary way to organize code in G-lang. They are first-class citizens, meaning they can be stored in variables, passed as arguments, and returned from other functions.</p>
 
 <h2>Defining Functions</h2>
 
@@ -20,7 +20,7 @@ let add = fn(x, y) {
 println(add(5, 10)); // 15</code></pre>
 
 <div class="alert alert-warning">
-    <strong>Warning:</strong> Due to the interpreted nature of giulio-lang, functions must be declared before being called. Declaring them after will trigger a runtime error.
+    <strong>Warning:</strong> Due to the interpreted nature of g-lang, functions must be declared before being called. Declaring them after will trigger a runtime error.
 </div>
 
 <h2>Parameters</h2>
@@ -72,7 +72,7 @@ println(apply_twice(add_one, 5)); // 7</code></pre>
 
 <h2>Closures</h2>
 
-<p>Functions in Giulio-lang capture variables from their surrounding scope. This allows you to create closures—functions that "remember" the environment in which they were created.</p>
+<p>Functions in G-lang capture variables from their surrounding scope. This allows you to create closures—functions that "remember" the environment in which they were created.</p>
 
 <pre><code>fn new_counter() {
     let count = 0;

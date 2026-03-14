@@ -1,7 +1,7 @@
 () => `
 <h1>Utility Functions</h1>
 
-<p>Giulio-lang includes a set of general-purpose utility functions that can be useful for debugging and dynamic type checking.</p>
+<p>G-lang includes a set of general-purpose utility functions that can be useful for debugging and dynamic type checking.</p>
 
 <h2>Function Reference</h2>
 
@@ -38,6 +38,6 @@ println(type(my_car));        // "Struct Car"
 </div>
 
 <div class="alert alert-success">
-    <strong>Next Steps:</strong> Explore <a href="#data-types">Data Types</a> for a detailed overview of all available types in Giulio-lang.
+    <strong>Next Steps:</strong> Explore <a href="#data-types">Data Types</a> for a detailed overview of all available types in G-lang.
 </div>
 `;

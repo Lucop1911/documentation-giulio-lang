@@ -1,12 +1,12 @@
 () => `
 <h1>Built-in Hash Functions & Methods</h1>
 
-<p>Hashes, also known as maps or dictionaries, are collections of key-value pairs. Giulio-lang provides a set of built-in functions and methods for working with hashes.</p>
+<p>Hashes, also known as maps or dictionaries, are collections of key-value pairs. G-lang provides a set of built-in functions and methods for working with hashes.</p>
 
 <h2>Hash Basics</h2>
 <p>Hash keys can be Strings, Integers, or Booleans. Values can be of any type.</p>
-<pre><code>let person = {"name": "Giulio", "age": 10, true: "is_awesome"};
-println(person["name"]); // "Giulio"
+<pre><code>let person = {"name": "G", "age": 10, true: "is_awesome"};
+println(person["name"]); // "G"
 println(person.get("age")); // 10
 </code></pre>
 
@@ -145,8 +145,8 @@ println(full_hash.is_empty()); // false</code></pre>
     </div>
     <div class="function-example">
         <h4>Example</h4>
-        <pre><code>let data = {"name": "Giulio", "version": 1.0};
-println(data.get("name")); // "Giulio"
+        <pre><code>let data = {"name": "G", "version": 1.0};
+println(data.get("name")); // "G"
 println(data.get("creator")); // null</code></pre>
     </div>
 </div>

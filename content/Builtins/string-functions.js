@@ -1,7 +1,7 @@
 () => `
 <h1>Built-in String Functions & Methods</h1>
 
-<p>Giulio-lang provides a variety of built-in methods for string manipulation. Since strings are immutable, these methods always return a new string and do not modify the original one.</p>
+<p>G-lang provides a variety of built-in methods for string manipulation. Since strings are immutable, these methods always return a new string and do not modify the original one.</p>
 
 <h2>Basic Operations</h2>
 
@@ -14,7 +14,7 @@ println(greeting); // "Hello, World!"</code></pre>
 
 <h3>Accessing Characters</h3>
 <p>You can access individual characters of a string using the <code>.get(index)</code> method or square brackets <code>[]</code>.</p>
-<pre><code>let message = "Giulio";
+<pre><code>let message = "G";
 println(message.get(0)); // "G"
 println(message[1]); // "i"
 </code></pre>
@@ -36,7 +36,7 @@ println(message[1]); // "i"
     </div>
     <div class="function-example">
         <h4>Example</h4>
-        <pre><code>let message = "Giulio";
+        <pre><code>let message = "G";
 println(message.len()); // 6</code></pre>
     </div>
 </div>
@@ -154,10 +154,10 @@ println(filename.ends_with(".png")); // false</code></pre>
     <div class="function-example">
         <h4>Example</h4>
         <pre><code>let message = "Hello world, world!";
-let new_message = message.replace("world", "Giulio");
-println(new_message); // "Hello Giulio, Giulio!"
-let new_message_fn = replace(message, "world", "Giulio");
-println(new_message_fn); // "Hello Giulio, Giulio!"</code></pre>
+let new_message = message.replace("world", "G");
+println(new_message); // "Hello G, G!"
+let new_message_fn = replace(message, "world", "G");
+println(new_message_fn); // "Hello G, G!"</code></pre>
     </div>
 </div>
 

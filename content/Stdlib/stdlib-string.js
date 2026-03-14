@@ -26,9 +26,9 @@
     </div>
     <div class="function-example">
         <h4>Example</h4>
-        <pre><code>let parts = ["Giulio", "is", "awesome"];
+        <pre><code>let parts = ["G", "is", "awesome"];
 let sentence = join(parts, " ");
-println(sentence); // "Giulio is awesome"
+println(sentence); // "G is awesome"
 
 let csv = string.join(["a", "b", "c"], ",");
 println(csv); // "a,b,c"

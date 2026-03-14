@@ -1,1 +1,1 @@
-Documentation for giulio-lang
+Documentation for g-lang

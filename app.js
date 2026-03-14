@@ -23,8 +23,8 @@ async function preloadAllContentForSearch() {
     }
 }
 
-async function fetch_giulio_version() {
-    let version = await fetch("https://api.github.com/repos/lucop1911/giulio-lang/releases/latest")
+async function fetch_g_version() {
+    let version = await fetch("https://api.github.com/repos/lucop1911/g-lang/releases/latest")
         .then(response => response.json())
         .then(data => data.tag_name)
         .catch(e => {
@@ -35,7 +35,7 @@ async function fetch_giulio_version() {
 }
 
 async function insert_version_to_html() {
-    const version = await fetch_giulio_version();
+    const version = await fetch_g_version();
     const v_element = document.getElementById("version");
     v_element.innerHTML = version;
 }
@@ -532,12 +532,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 searchResultsContainer.innerHTML = '';
                 selectedResultIndex = -1;
             }
-        } else if ((e.ctrlKey || e.metaKey) && e.key === 'f') { // Re-bind Ctrl+F
-            e.preventDefault(); // Prevent default browser search
-            searchOverlay.classList.add('active');
-            setTimeout(() => {
-                searchInput.focus();
-            }, 50); // Small delay, adjust if necessary
         }
     });
 

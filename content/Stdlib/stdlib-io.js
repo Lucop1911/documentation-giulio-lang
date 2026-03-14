@@ -74,7 +74,7 @@ println(content);</code></pre>
     </div>
     <div class="function-example">
         <h4>Example</h4>
-        <pre><code>io.write_file("output.txt", "Hello, Giulio!");</code></pre>
+        <pre><code>io.write_file("output.txt", "Hello, G!");</code></pre>
     </div>
 </div>
 
@@ -97,7 +97,7 @@ println(content);</code></pre>
     <div class="function-example">
         <h4>Example</h4>
         <pre><code>async fn save_data() {
-    await io.write_file_async("output.txt", "Hello, Giulio!");
+    await io.write_file_async("output.txt", "Hello, G!");
 }</code></pre>
     </div>
 </div>

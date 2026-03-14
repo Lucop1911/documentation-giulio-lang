@@ -1,7 +1,7 @@
 () => `
 <h1>Structs</h1>
 
-<p>Structs (structures) allow you to define custom data types that group related data and behavior together. They are the primary mechanism for object-oriented programming patterns in Giulio-lang.</p>
+<p>Structs (structures) allow you to define custom data types that group related data and behavior together. They are the primary mechanism for object-oriented programming patterns in G-lang.</p>
 
 <h2>Defining a Struct</h2>
 

@@ -1,7 +1,7 @@
 () => `
 <h1>Async & Await</h1>
 
-<p>Giulio-lang supports asynchronous programming through the <code>async</code> and <code>await</code> keywords. Async functions allow you to write non-blocking code in a sequential, readable manner.</p>
+<p>G-lang supports asynchronous programming through the <code>async</code> and <code>await</code> keywords. Async functions allow you to write non-blocking code in a sequential, readable manner.</p>
 
 <h2>Defining Async Functions</h2>
 

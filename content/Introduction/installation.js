@@ -1,11 +1,11 @@
 () => `
 <h1>Installation</h1>
 
-<p>Get Giulio-lang up and running on your system with these installation instructions.</p>
+<p>Get G-lang up and running on your system with these installation instructions.</p>
 
 <h2>Prerequisites</h2>
 
-<p>To build Giulio-lang from source, you'll need:</p>
+<p>To build G-lang from source, you'll need:</p>
 
 <ul>
     <li><strong>Rust 1.70 or later</strong> - <a href="https://www.rust-lang.org/tools/install" target="_blank">Install Rust</a></li>
@@ -25,8 +25,8 @@
 
 <h3>Step 1: Clone the Repository</h3>
 
-<pre><code>git clone https://github.com/lucop1911/giulio-lang.git
-cd giulio-lang</code></pre>
+<pre><code>git clone https://github.com/lucop1911/g-lang.git
+cd g-lang</code></pre>
 
 <h3>Step 2: Build the Project</h3>
 
@@ -38,17 +38,17 @@ cd giulio-lang</code></pre>
 
 <p>After a successful build, the executable will be located at:</p>
 
-<pre><code>target/release/giulio-lang</code></pre>
+<pre><code>target/release/g-lang</code></pre>
 
 <h2>Add to PATH (Optional but Recommended)</h2>
 
-<p>To run <code>giulio-lang</code> from anywhere in your system:</p>
+<p>To run <code>g-lang</code> from anywhere in your system:</p>
 
 <h3>Linux / macOS</h3>
 
 <p>Add the binary location to your PATH by adding this line to your <code>~/.bashrc</code>, <code>~/.zshrc</code>, or equivalent:</p>
 
-<pre><code>export PATH="$PATH:/path/to/giulio-lang/target/release"</code></pre>
+<pre><code>export PATH="$PATH:/path/to/g-lang/target/release"</code></pre>
 
 <p>Or for the current session only:</p>
 
@@ -60,7 +60,7 @@ cd giulio-lang</code></pre>
 
 <h3>Windows</h3>
 
-<p>Add <code>C:\\path\\to\\giulio-lang\\target\\release</code> to your system PATH environment variable:</p>
+<p>Add <code>C:\\path\\to\\g-lang\\target\\release</code> to your system PATH environment variable:</p>
 
 <ol>
     <li>Search for "Environment Variables" in Windows Settings</li>
@@ -73,41 +73,41 @@ cd giulio-lang</code></pre>
 
 <h2>Verify Installation</h2>
 
-<p>Check that Giulio-lang is installed correctly by running:</p>
+<p>Check that G-lang is installed correctly by running:</p>
 
-<pre><code>giulio-lang --version</code></pre>
+<pre><code>g-lang --version</code></pre>
 
 <p>You should see the version number printed:</p>
 
 <pre><code>0.1.0</code></pre>
 
 <div class="alert alert-success">
-    <strong>Success!</strong> Giulio-lang is now installed on your system.
+    <strong>Success!</strong> G-lang is now installed on your system.
 </div>
 
 <h2>Running Your First Program</h2>
 
-<p>Create a file called <code>hello.giu</code>:</p>
+<p>Create a file called <code>hello.g</code>:</p>
 
-<pre><code>println("Hello, Giulio-lang!");</code></pre>
+<pre><code>println("Hello, G-lang!");</code></pre>
 
 <p>Run it with:</p>
 
-<pre><code>giulio-lang run hello.giu</code></pre>
+<pre><code>g-lang run hello.g</code></pre>
 
 <p>Output:</p>
 
-<pre><code>Hello, Giulio-lang!</code></pre>
+<pre><code>Hello, G-lang!</code></pre>
 
 <h2>Start the REPL</h2>
 
 <p>To start the interactive REPL, simply run:</p>
 
-<pre><code>giulio-lang</code></pre>
+<pre><code>g-lang</code></pre>
 
 <p>You'll see:</p>
 
-<pre><code>Giulio-lang v0.1.0
+<pre><code>G-lang v0.1.0
 Type 'exit' or 'quit' to quit
 
 >> </code></pre>
@@ -115,7 +115,7 @@ Type 'exit' or 'quit' to quit
 <p>Now you can type expressions and see results immediately!</p>
 
 <div class="alert alert-info">
-    <strong>Next Steps:</strong> Continue to the <a href="#quick-start">Quick Start</a> guide to learn the basics of Giulio-lang.
+    <strong>Next Steps:</strong> Continue to the <a href="#quick-start">Quick Start</a> guide to learn the basics of G-lang.
 </div>
 
 <h2>Troubleshooting</h2>
@@ -144,23 +144,23 @@ Type 'exit' or 'quit' to quit
 
 <p>If you get permission errors when running the binary:</p>
 
-<pre><code>chmod +x target/release/giulio-lang</code></pre>
+<pre><code>chmod +x target/release/g-lang</code></pre>
 
 <h2>Alternative: Run Without Installing</h2>
 
-<p>You can run Giulio-lang directly from the repository without adding to PATH:</p>
+<p>You can run G-lang directly from the repository without adding to PATH:</p>
 
-<pre><code># From the giulio-lang directory
-./target/release/giulio-lang
+<pre><code># From the g-lang directory
+./target/release/g-lang
 
 # Or with cargo
 cargo run --release</code></pre>
 
-<h2>Updating Giulio-lang</h2>
+<h2>Updating G-lang</h2>
 
 <p>To update to the latest version:</p>
 
-<pre><code>cd giulio-lang
+<pre><code>cd g-lang
 git pull origin master
 cargo build --release</code></pre>
 `;

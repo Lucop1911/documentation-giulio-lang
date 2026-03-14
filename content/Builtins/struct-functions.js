@@ -1,7 +1,7 @@
 () => `
 <h1>Built-in Struct Functions & Methods</h1>
 
-<p>Structs are composite data types that group together related data. Giulio-lang provides several built-in functions and methods to work with struct instances.</p>
+<p>Structs are composite data types that group together related data. G-lang provides several built-in functions and methods to work with struct instances.</p>
 
 <h2>Struct Basics</h2>
 <p>Struct fields are typically accessed through dedicated functions and methods. This functional approach ensures that struct manipulations are explicit and predictable.</p>
@@ -14,11 +14,11 @@ struct Person {
 let p1 = Person{};
 println(p1); // Person { name: "Anonymous", age: 0 }
 
-let p2 = p1.set_field("name", "Giulio");
-println(p2); // Person { name: "Giulio", age: 0 }
+let p2 = p1.set_field("name", "G");
+println(p2); // Person { name: "G", age: 0 }
 
 let name = p2.get_field("name");
-println(name); // "Giulio"
+println(name); // "G"
 </code></pre>
 
 <h2>Function and Method Reference</h2>
