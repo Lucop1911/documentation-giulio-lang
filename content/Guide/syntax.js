@@ -113,10 +113,15 @@ import std::io;
 import std::math;
 
 // Importing a module from a local file
-import path/to/file;
+import path::to::file;
 
 // Importing elements from a local file
-import path/to/file::{function1, function2, ...};</code></pre>
+import path::to::file::{function1, function2, ...};
+
+// Importing file in parent folder
+import super::file;</code></pre>
+
+
 
 <div class="alert alert-info">
     <strong>Note:</strong> Statements in G-lang typically end with a semicolon <code>;</code>.

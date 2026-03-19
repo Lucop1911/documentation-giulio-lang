@@ -188,6 +188,57 @@ println(new_letters); // ["a", "c"]</code></pre>
 </div>
 
 <div class="function-doc">
+    <div class="function-signature">.contains(item) → Boolean</div>
+    <div class="function-description">
+        <p>Checks if the array contains a specific element.</p>
+    </div>
+    <div class="function-params">
+        <h4>Parameters</h4>
+        <ul>
+            <li><code>item</code> (Any) - The element to search for.</li>
+        </ul>
+    </div>
+    <div class="function-returns">
+        <h4>Returns</h4>
+        <p>A Boolean: <code>true</code> if the array contains the item, otherwise <code>false</code>.</p>
+    </div>
+    <div class="function-example">
+        <h4>Example</h4>
+        <pre><code>let numbers = [1, 2, 3, 4, 5];
+println(numbers.contains(3));   // true
+println(numbers.contains(10));  // false
+let strings = ["apple", "banana"];
+println(strings.contains("apple")); // true</code></pre>
+    </div>
+</div>
+
+<div class="function-doc">
+    <div class="function-signature">.slice(start, end?) → Array</div>
+    <div class="function-description">
+        <p>Returns a new array containing elements from the start index up to (but not including) the end index. Supports negative indices to count from the end.</p>
+    </div>
+    <div class="function-params">
+        <h4>Parameters</h4>
+        <ul>
+            <li><code>start</code> (Integer) - The starting index. Negative indices count from the end.</li>
+            <li><code>end</code> (Integer) - Optional. The ending index (exclusive). Defaults to the array length. Negative indices count from the end.</li>
+        </ul>
+    </div>
+    <div class="function-returns">
+        <h4>Returns</h4>
+        <p>A new Array containing the sliced elements.</p>
+    </div>
+    <div class="function-example">
+        <h4>Example</h4>
+        <pre><code>let numbers = [1, 2, 3, 4, 5];
+println(numbers.slice(0, 3));    // [1, 2, 3]
+println(numbers.slice(2));      // [3, 4, 5]
+println(numbers.slice(-2));      // [4, 5]
+println(numbers.slice(1, -1));   // [2, 3, 4]</code></pre>
+    </div>
+</div>
+
+<div class="function-doc">
     <div class="function-signature">cons(value, array) → Array</div>
     <div class="function-description">
         <p>Returns a new array with the given value prepended to the beginning. The name "cons" comes from Lisp and stands for "construct".</p>

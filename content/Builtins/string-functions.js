@@ -189,6 +189,46 @@ println(fruits[1]); // "banana"</code></pre>
 </div>
 
 <div class="function-doc">
+    <div class="function-signature">.to_upper() → String</div>
+    <div class="function-description">
+        <p>Returns a new string with all characters converted to uppercase.</p>
+    </div>
+    <div class="function-params">
+        <h4>Parameters</h4>
+        <p>None.</p>
+    </div>
+    <div class="function-returns">
+        <h4>Returns</h4>
+        <p>A new String with all characters in uppercase.</p>
+    </div>
+    <div class="function-example">
+        <h4>Example</h4>
+        <pre><code>let greeting = "hello world";
+println(greeting.to_upper()); // "HELLO WORLD"</code></pre>
+    </div>
+</div>
+
+<div class="function-doc">
+    <div class="function-signature">.to_lower() → String</div>
+    <div class="function-description">
+        <p>Returns a new string with all characters converted to lowercase.</p>
+    </div>
+    <div class="function-params">
+        <h4>Parameters</h4>
+        <p>None.</p>
+    </div>
+    <div class="function-returns">
+        <h4>Returns</h4>
+        <p>A new String with all characters in lowercase.</p>
+    </div>
+    <div class="function-example">
+        <h4>Example</h4>
+        <pre><code>let greeting = "HELLO WORLD";
+println(greeting.to_lower()); // "hello world"</code></pre>
+    </div>
+</div>
+
+<div class="function-doc">
     <div class="function-signature">.trim() → String</div>
     <div class="function-description">
         <p>Removes whitespace from both the beginning and end of a string.</p>
@@ -206,6 +246,57 @@ println(fruits[1]); // "banana"</code></pre>
         <pre><code>let input = "   some text   ";
 let trimmed = input.trim();
 println("'", trimmed, "'"); // "'some text'"</code></pre>
+    </div>
+</div>
+
+<div class="function-doc">
+    <div class="function-signature">.contains(substring) → Boolean</div>
+    <div class="function-description">
+        <p>Checks if the string contains a specified substring.</p>
+    </div>
+    <div class="function-params">
+        <h4>Parameters</h4>
+        <ul>
+            <li><code>substring</code> (String) - The substring to search for.</li>
+        </ul>
+    </div>
+    <div class="function-returns">
+        <h4>Returns</h4>
+        <p>A Boolean: <code>true</code> if the substring is found, otherwise <code>false</code>.</p>
+    </div>
+    <div class="function-example">
+        <h4>Example</h4>
+        <pre><code>let text = "Hello, World!";
+println(text.contains("World"));  // true
+println(text.contains("world"));  // false (case-sensitive)
+println(text.contains("Hello"));  // true</code></pre>
+    </div>
+</div>
+
+<div class="function-doc">
+    <div class="function-signature">.slice(start, end?) → String</div>
+    <div class="function-description">
+        <p>Returns a substring from the start index up to (but not including) the end index. Supports negative indices to count from the end.</p>
+    </div>
+    <div class="function-params">
+        <h4>Parameters</h4>
+        <ul>
+            <li><code>start</code> (Integer) - The starting index. Negative indices count from the end.</li>
+            <li><code>end</code> (Integer) - Optional. The ending index (exclusive). Defaults to the string length. Negative indices count from the end.</li>
+        </ul>
+    </div>
+    <div class="function-returns">
+        <h4>Returns</h4>
+        <p>A new String containing the sliced portion.</p>
+    </div>
+    <div class="function-example">
+        <h4>Example</h4>
+        <pre><code>let text = "Hello, World!";
+println(text.slice(0, 5));       // "Hello"
+println(text.slice(7));         // "World!"
+println(text.slice(-6));        // "World!"
+println(text.slice(0, -7));     // "Hello, "
+println(text.slice(-6, -1));    // "World"</code></pre>
     </div>
 </div>
 
