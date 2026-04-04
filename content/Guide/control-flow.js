@@ -52,7 +52,45 @@ for (item in items) {
 let numbers = [10, 20, 30];
 for (n in numbers) {
     println(n);
-}</code></pre>
+}
+</code></pre>
+
+<h3>For Loops with Destructuring</h3>
+
+<p>G-lang supports destructuring in iterator-style <code>for</code> loops, allowing you to unpack values from arrays or tuples directly in the loop declaration.</p>
+
+<pre><code>// Basic for loop destructuring
+let data = [[1, 2], [3, 4], [5, 6]];
+for ((a, b) in data) {
+    println("a = ", a, ", b = ", b);
+}
+
+// Summing with destructuring
+let sum = 0;
+for ((x, y) in [[10, 20], [30, 40]]) {
+    sum = sum + x + y;
+}
+println("Sum: ", sum);
+
+// Three variables destructuring
+for ((name, age, city) in [["Alice", 30, "NYC"], ["Bob", 25, "LA"]]) {
+    println(name, " is ", age, " and lives in ", city);
+}
+
+// Nested iteration
+let pairs = [[1, 2], [3, 4]];
+let first_sum = 0;
+let second_sum = 0;
+for ((a, b) in pairs) {
+    first_sum = first_sum + a;
+    second_sum = second_sum + b;
+}
+println("First sum: ", first_sum, ", Second sum: ", second_sum);
+</code></pre>
+
+<div class="alert alert-info">
+    <strong>Note:</strong> Destructuring works with any iterable where each element is an array or tuple with the expected number of elements.
+</div>
 
 <h3>For Loops (C-style)</h3>
 

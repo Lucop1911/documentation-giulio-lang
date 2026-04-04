@@ -4,8 +4,20 @@
 <p>G-lang has built-in support for WebAssembly (WASM), allowing you to import and use functions from compiled <code>.wasm</code> or text-format <code>.wat</code> files. This enables integration with a vast ecosystem of WASM modules and allows you to write performance-critical code in other languages that compile to WASM.</p>
 
 <div class="alert alert-info">
-    <strong>Note:</strong> WASM support must be enabled when building G-lang. If you encounter errors about WASM runtime not being available, ensure your installation includes WASM support.
+     <strong>Note:</strong> WASM support must be enabled when building G-lang. If you encounter errors about WASM runtime not being available, ensure your installation includes WASM support.
 </div>
+
+<h2>WASI Support</h2>
+<p>Our WASM runtime supports WASI (WebAssembly System Interface) preview versions 1 and 2 (WASI p1 and p2). This allows G-lang programs to interact with the system through standardized APIs when running WASM modules.</p>
+<p>WASI provides access to:</p>
+<ul>
+    <li>File system operations</li>
+    <li>Environment variables</li>
+    <li>Clock and timing functions</li>
+    <li>Random number generation</li>
+    <li>Networking capabilities</li>
+</ul>
+<p>To use WASI features, ensure your WASM modules are compiled with WASI support enabled.</p>
 
 <h2>Importing WASM Modules</h2>
 

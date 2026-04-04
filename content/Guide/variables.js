@@ -41,6 +41,41 @@ x %= 5;  // x is now 1  (equivalent to x = x % 5)</code></pre>
 
 <p>These operators provide a convenient shorthand for updating variables with arithmetic operations.</p>
 
+<h2>Multiple Variable Declarations</h2>
+
+<p>G-lang allows you to declare multiple variables in a single statement:</p>
+
+<pre><code>let x = 10, y = 20, z = 30;
+let name = "Alice", age = 25, city = "New York";
+</code></pre>
+
+<p>Each variable can have its own initializer, or you can declare variables without initializers:</p>
+
+<pre><code>let a, b, c; // All declared but undefined
+let x = 5, y, z = 10; // Mixed initialization
+</code></pre>
+
+<h2>Tuple Assignments</h2>
+
+<p>G-lang supports tuple assignment, allowing you to assign multiple variables at once from an array or function return value:</p>
+
+<pre><code>// Swapping values
+let a = 5;
+let b = 10;
+[a, b] = [b, a]; // Now a is 10, b is 5
+
+// Destructuring from arrays
+let [x, y] = [100, 200]; // x is 100, y is 200
+let [first, second, third] = [1, 2, 3]; // first=1, second=2, third=3
+
+// Skipping elements
+let [first, , third] = [1, 2, 3]; // first=1, third=3 (second is skipped)
+
+// Nested destructuring
+let [[x1, y1], [x2, y2]] = [[1, 2], [3, 4]];
+// x1=1, y1=2, x2=3, y2=4
+</code></pre>
+
 <p>Because of dynamic typing, you can technically assign a value of a different type to a variable, though it is often better practice to keep variables consistent.</p>
 
 <pre><code>let data = 100;
